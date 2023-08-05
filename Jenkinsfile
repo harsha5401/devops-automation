@@ -25,6 +25,7 @@ pipeline {
 
 }
                    sh 'docker push harsha7633/devops-integration'
+                    sh 'docker run -itd -p 8085:8080 harsha7633/devops-integration'
                 }
             }
         }
